@@ -36,6 +36,7 @@ var addButton = document
 
       li.appendChild(newDiv);
       todoList.appendChild(li);
+      showLeft();
 
       id++;
     }
@@ -51,10 +52,16 @@ todoList.addEventListener("click", () => {
       nodeId = findNodeId(divId);
     });
   }
+  showLeft();
   todoList.removeChild(todoList.childNodes[nodeId]);
   nodeId = 10000000;
 });
 
+function showLeft() {
+  console.log("hell");
+  var liArr = document.getElementsByTagName("li");
+  console.log(liArr.length);
+}
 findNodeId = (divId) => {
   var liArr = document.getElementsByTagName("li");
   for (let i = 0; i < liArr.length; i++) {
