@@ -1,7 +1,48 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
 ul {
   list-style: none;
 }
 
 body {
-  background-color: red;
+  background-color: lightgrey;
+}
+
+.container {
+  margin: 10px 40px;
+}
+
+.container input {
+  height: 30px;
+  border-radius: 5px;
+  margin: 20px;
+}
+
+#add {
+  height: 30px;
+  padding: 0px 20px;
+  background-color: grey;
+  color: white;
+}
+
+li {
+  width: 350px;
+  margin-top: 20px;
+}
+
+li div {
+  background-color: grey;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 24px;
+}
+
+li div button {
+  padding: 10px;
+  margin-left: 40px;
+  border-radius: 10px;
 }

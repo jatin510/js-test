@@ -52,7 +52,7 @@ todoList.addEventListener("click", () => {
     });
   }
   todoList.removeChild(todoList.childNodes[nodeId]);
-  nodeId = MAX_SAFE_INTEGER;
+  nodeId = 10000000;
 });
 
 findNodeId = (divId) => {
